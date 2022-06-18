@@ -1,0 +1,144 @@
+body    {
+    color: white;
+    margin: 20px;
+    background-image: url(/img/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.body   {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.texts  {
+    margin-top: 100px;
+}
+
+.forms  {
+    margin-left: 80px;
+    margin-top: 15px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 5px rgba(0, 0, 0, 0.14)
+}
+
+h1  {
+    font-size: 30px;
+}
+
+p   {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.action {
+    font-size: 9px;
+    margin-left: 145px;
+    line-height: 0px;
+    color: black;
+    visibility: hidden;
+}
+
+.button-p   {
+    font-size: 9px;
+    color: hsl(246, 25%, 77%);
+}
+
+button  {
+    padding: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 10px;
+    border: hidden;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+span    {
+    color: hsl(0, 100%, 74%);
+}
+
+.upper-span  {
+    font-weight: bold;
+    color: white;
+}
+
+.upper-button    {
+    background-color: hsl(248, 32%, 49%);
+    margin-left: 80px;
+    margin-bottom: 0px;
+    padding: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 13px;
+    box-shadow: 1px 5px rgba(0, 0, 0, 0.14);
+}
+
+/* forms */
+
+input   {
+    padding: 10px 75px;
+    padding-left: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: solid 1px;
+    display: block;
+}
+
+/* img */
+
+label   {
+    position: relative;
+}
+
+label:before    {
+    content: "";
+    position: absolute;
+    left: 190px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: url(/img/icon-error.svg)   no-repeat  30px;
+    visibility: hidden;
+}
+
+/* media query */
+
+@media (max-width: 376px) {
+    body    {
+
+    }
+    .body   {
+        display: block;
+    }
+    p  {
+        font-size: 16px;
+        text-align: center;
+    }
+    h1      {
+        font-size: 26px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .texts  {
+        margin-bottom: 70px;
+    }
+    .upper-button   {
+        padding: 20px;
+        margin-left: 34px;
+    }
+    input  {
+        padding-right: 70px;
+    }
+    .forms  {
+        margin-left: 10px;
+        padding-left: 37px;
+    }
+    button  {
+        font-size: 12px;
+    }
+}
