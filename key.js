@@ -2,27 +2,19 @@ let button = document.getElementById('button');
 
 button.onclick = function() {
     if(document.thisForm.firstName.value == "" ) {
-        const el = document.querySelector('label');
-        el.style.backgroundColor = 'red';
-        // document.thisForm.firstname.focus();
-        return false;
+        document.getElementById("laBel").classList.add('label-class')
+        document.getElementById("p-action").classList.add('show')
     }
     if(document.thisForm.lastName.value == "" ) {
-        alert("please provide your Last Name" );
-        document.thisForm.lastName.focus();
-        return false;
+        document.getElementById("laBel-2").classList.add('label-class')
+        document.getElementById("p-action2").classList.add('show')
     }
     if(document.thisForm.email.value == "" ) {
-        alert("please provide your Email" );
-        document.thisForm.email.focus();
-        return false;
+        document.getElementById("laBel-3").classList.add('label-class')
+        document.getElementById("p-action3").classList.add('show')
     }
     if(document.thisForm.password.value == "" ) {
-        alert("please provide your password" );
-        document.thisForm.password.focus();
-        return false;
-    }
-
-
-    return( true );
+        document.getElementById("laBel-4").classList.add('label-class')
+        document.getElementById("p-action4").classList.add('show')
+    } else  {}
 }
